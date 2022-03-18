@@ -22,7 +22,7 @@ if (n > 9)
 {
 _putchar('1');
 }
-_putchar((n % 10 + '0');
+_putchar((n % 10) + '0');
 }
 _putchar('\n');
 }
