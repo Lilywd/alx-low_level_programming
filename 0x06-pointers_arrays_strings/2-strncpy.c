@@ -4,7 +4,7 @@
 /**
  * _strncpy-function that copies a string
  * @src: string to be appended to dest
- * @n: number of bytes to copy
+ * @n: number of characters to copy
  * @dest: destination
  * Return:pointer to the resulting string dest
  */
