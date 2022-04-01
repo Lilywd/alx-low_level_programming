@@ -1,20 +1,11 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * _isdigit - function that checks for a digit 0 through 9
- * @c: character to be checked
- * Return: 1 if character is a digit , 0 if otherwise
+ * _islower - check if letter c is in lowercase
+ * @c: letter to be checked
+ * Return: 1 if lower, 0 if capital
  */
 
-int _isdigit(int c)
+int _islower(int c)
 {
-	if (c >= '0' && c <= '9')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (c >= 97 && c <= 122);
 }
