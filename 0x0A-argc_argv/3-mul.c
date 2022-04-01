@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main _ Entry point
+ * main _ program that multiplies two numbers
  * @argc:count of arguments passed to program
  * @argv: array of pointers to strings
  * Return: 0 for success
