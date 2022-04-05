@@ -11,14 +11,23 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
+	int i;
 
-	int lena = strlen(s1);
-	int lenb = strlen(s2);
+	int s1_length = strlen(s1);
+	int s2_length = strlen(s2);
+	int size = s1_length + s2_length + 1;
 
+	p = malloc(sizeof(char) * size);
+	if (p == NULL)
+		return (NULL);
 
-	p = (char *)malloc(lena + lenb + 1);
-	str_concat(s1, s2);
-	p[lena + lenb] = '\0';
-	return (0);
+	for (i = 0; i < s1_length; i++)
+		p[i] = s1[i];
+
+	for (i = 0; i < s2_length; i++)
+		p[s1_length + i] = s2[i];
+	
+	p[size - 1] = '\0';
+	return (p);
 }
 
