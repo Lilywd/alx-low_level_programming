@@ -6,7 +6,7 @@
  * *str_concat - function that concatenates two strings
  * @s1: string one
  * @s2: string to be concatenated to string one
- * Return:  NULL on failure
+ * Return:  NULL on failure.
  */
 char *str_concat(char *s1, char *s2)
 {
